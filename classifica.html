@@ -13,8 +13,10 @@
         }
 
         #logo{
-            width: 400px;
-            height: auto;
+        width: 100%; 
+        max-width: 400px; 
+        height: auto;
+        margin: 0 auto;
 
         }
 
@@ -25,13 +27,13 @@
   </head>
   <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
     <div class="container mt-5">
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">TOP Film</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">TOP Film</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,23 +42,22 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-        </li> <a class="nav-link" href="classifica.html">Classifica</a>
+          <a class="nav-link active" href="classifica.html">Classifica</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
 
-    <div id="logo" class="container mt-5 text-center"> <img src="banner-top-film.png" alt="Top Film Banner" class="img-fluid rounded mb-4 shadow">
-
-    <h2 class="text-white mb-4"style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">I Migliori Film al Mondo (Top 10 IMDb)</h2>
+<div id="logo" class="mt-5 text-center"> 
+    <img src="banner-top-film.png" alt="Top Film Banner" class="img-fluid rounded mb-4 shadow">
+</div>
+<h2 class="text-white text-center mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+    I Migliori Film al Mondo (Top 10 IMDb)
+</h2>
     
     </div>
-  
+  <div class="table-responsive">
   <table class="table table-dark table-hover">
     <thead>
       <tr>
@@ -141,5 +142,7 @@
     </tbody>
   </table>
 </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
